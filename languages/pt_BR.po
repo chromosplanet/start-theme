@@ -1,0 +1,292 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Lang Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-02 02:21-0300\n"
+"PO-Revision-Date: 2011-07-02 02:22-0300\n"
+"Last-Translator: \n"
+"Language-Team:  <mateusneves@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;gettext;gettext_noop;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-SearchPath-0: /Applications/MAMP/htdocs/wordpress/wp-content/themes/base-theme\n"
+
+#: /Applications/MAMP/htdocs/wordpress/wp-content/themes/base-theme/comments.php:7
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Este post é protegido por senha. Entre com a senha para ver os comentários."
+
+#: /Applications/MAMP/htdocs/wordpress/wp-content/themes/base-theme/comments.php:15
+msgid "No Responses"
+msgstr "Nenhum Comentário"
+
+#: /Applications/MAMP/htdocs/wordpress/wp-content/themes/base-theme/comments.php:15
+msgid "One Response"
+msgstr "Um Comentário"
+
+#: /Applications/MAMP/htdocs/wordpress/wp-content/themes/base-theme/comments.php:15
+msgid "% Responses"
+msgstr "% Comentários"
+
+#: /Applications/MAMP/htdocs/wordpress/wp-content/themes/base-theme/comments.php:37
+msgid "Comments are closed."
+msgstr "Os comentários estão fechados."
+
+#: /Applications/MAMP/htdocs/wordpress/wp-content/themes/base-theme/comments.php:47
+msgid "Leave a Reply"
+msgstr "Deixe um comentário"
+
+#: /Applications/MAMP/htdocs/wordpress/wp-content/themes/base-theme/comments.php:47
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Deixe um resposta para %s"
+
+#: /Applications/MAMP/htdocs/wordpress/wp-content/themes/base-theme/functions.php:84
+msgid "Tools"
+msgstr "Ferramentas"
+
+#: /Applications/MAMP/htdocs/wordpress/wp-content/themes/base-theme/functions.php:84
+msgid "Settings"
+msgstr "Configurações"
+
+#: /Applications/MAMP/htdocs/wordpress/wp-content/themes/base-theme/functions.php:84
+msgid "Plugins"
+msgstr ""
+
+#: /Applications/MAMP/htdocs/wordpress/wp-content/themes/base-theme/header.php:46
+#, php-format
+msgid "Archive for &lsquo;%s&rsquo;"
+msgstr "Arquivo para &lsquo;%s&rsquo;"
+
+#: /Applications/MAMP/htdocs/wordpress/wp-content/themes/base-theme/header.php:50
+#, php-format
+msgid "Tag Archive for &lsquo;%s&rsquo;"
+msgstr "Arquivo de tag para &lsquo;%s&rsquo;"
+
+#: /Applications/MAMP/htdocs/wordpress/wp-content/themes/base-theme/header.php:54
+#, php-format
+msgid "%s Archive"
+msgstr "%s Arquivo:"
+
+#: /Applications/MAMP/htdocs/wordpress/wp-content/themes/base-theme/header.php:58
+#, php-format
+msgid "Search Results for &lsquo;%s&rsquo;"
+msgstr "Resultados da busca para &lsquo;%s&rsquo;"
+
+#: /Applications/MAMP/htdocs/wordpress/wp-content/themes/base-theme/header.php:63
+msgid " at "
+msgstr "às"
+
+#: /Applications/MAMP/htdocs/wordpress/wp-content/themes/base-theme/loop-blog.php:9
+#: /Applications/MAMP/htdocs/wordpress/wp-content/themes/base-theme/loop-search.php:9
+#: /Applications/MAMP/htdocs/wordpress/wp-content/themes/base-theme/loop-thumb.php:24
+#: /Applications/MAMP/htdocs/wordpress/wp-content/themes/base-theme/loop.php:8
+msgid "Comments"
+msgstr "Comentários"
+
+#: /Applications/MAMP/htdocs/wordpress/wp-content/themes/base-theme/loop-blog.php:48
+#: /Applications/MAMP/htdocs/wordpress/wp-content/themes/base-theme/loop-search.php:47
+#: /Applications/MAMP/htdocs/wordpress/wp-content/themes/base-theme/loop-thumb.php:59
+#: /Applications/MAMP/htdocs/wordpress/wp-content/themes/base-theme/loop.php:47
+msgid "Sorry, no records were found"
+msgstr "Desculpe, nenhum registro foi encontrado"
+
+#: /Applications/MAMP/htdocs/wordpress/wp-content/themes/base-theme/searchform.php:3
+msgid "Search"
+msgstr "Procurar"
+
+#~ msgid "Not Found, Error 404"
+#~ msgstr "Erro 404, página não encontrada"
+
+#~ msgid "The page you are looking for no longer exists."
+#~ msgstr "A página que você está procurando não existe mais."
+
+#~ msgid ""
+#~ "Perhaps you can find what you are looking for by searching the site "
+#~ "archives!"
+#~ msgstr ""
+#~ "Talvez você possa encontrar o que você está procurando, pesquisando os "
+#~ "arquivos do site!"
+
+#~ msgid "Search by Page:"
+#~ msgstr "Busca por página:"
+
+#~ msgid "Search by Month:"
+#~ msgstr "Busca por mês:"
+
+#~ msgid "Search by Category:"
+#~ msgstr "Busca por categoria:"
+
+#~ msgid "Logged in as"
+#~ msgstr "Acessando como"
+
+#~ msgid "Log out of this account"
+#~ msgstr "Desconectar desta conta"
+
+#~ msgid "Log out"
+#~ msgstr "Sair"
+
+#~ msgid "Name"
+#~ msgstr "Nome"
+
+#~ msgid "(required)"
+#~ msgstr "(requerido)"
+
+#~ msgid "Mail (will not be published)"
+#~ msgstr "E-mail ( não será publicado )"
+
+#~ msgid "Submit Comment"
+#~ msgstr "Enviar Comentário"
+
+#~ msgid "Bookmarks"
+#~ msgstr "Lista de links"
+
+#~ msgid "Tag cloud"
+#~ msgstr "Nuvem de tags"
+
+#~ msgid ""
+#~ "Did you like this theme? Then make a donation as an incentive for the "
+#~ "development of new versions and new themes for Wordpress.\n"
+#~ "Thanks! Mateus Neves"
+#~ msgstr ""
+#~ "Você gostou deste tema? Então faça uma doação como um incentivo para o "
+#~ "desenvolvimento de novas versões e novos temas para Wordpress. \n"
+#~ "Obrigado! Mateus Neves"
+
+#~ msgid "Make a donation"
+#~ msgstr "Faça uma doação"
+
+#~ msgid "Theme Options"
+#~ msgstr "Opções do tema"
+
+#~ msgid "Choose a category"
+#~ msgstr "Escolha uma categoria"
+
+#~ msgid "General"
+#~ msgstr "Geral"
+
+#~ msgid "Mode of appearance of the theme"
+#~ msgstr "Modo da aparência do tema "
+
+#~ msgid "Select the appearance mode"
+#~ msgstr "Selecione o modo de aparência"
+
+#~ msgid "Color theme"
+#~ msgstr "Cor do tema"
+
+#~ msgid "Select the color theme"
+#~ msgstr "Selecione a cor do tema"
+
+#~ msgid "Logo URL (image height 92px)"
+#~ msgstr "URL da logomarca (altura da imagem 92px)"
+
+#~ msgid "Enter the path to your logo image"
+#~ msgstr "Preencha com o endereço da imagem da logomarca"
+
+#~ msgid "Optional images for logos"
+#~ msgstr "Imagens opcionais para logos"
+
+#~ msgid "Select the id number of the logo if you dont use the Logo URL"
+#~ msgstr ""
+#~ "Selecione o número identificador da logo, se você não estiver usando uma "
+#~ "Logomarca sua"
+
+#~ msgid "Font type"
+#~ msgstr "Tipo da fonte"
+
+#~ msgid "Select a font type"
+#~ msgstr "Selecione o tipo de fonte"
+
+#~ msgid "Show the featured post in front page"
+#~ msgstr "Exibir o post destacado na página inicial"
+
+#~ msgid "Check if you want to show the featured post"
+#~ msgstr "Marque se você quiser exibir o post destacado"
+
+#~ msgid "Front page feature"
+#~ msgstr "Destaque da página inicial"
+
+#~ msgid "Select the format of the front page feature"
+#~ msgstr "Selecione o formato do destaque da página inicial"
+
+#~ msgid "Single feature"
+#~ msgstr "Destaque simples"
+
+#~ msgid "Slider setup"
+#~ msgstr "Configurações do slider"
+
+#~ msgid "Slides limit"
+#~ msgstr "Limite de slides"
+
+#~ msgid "Select a limit number of slides"
+#~ msgstr "Selecione o número limite de slides"
+
+#~ msgid "Social network"
+#~ msgstr "Redes sociais"
+
+#~ msgid "Enter with the url for this social network. With http://"
+#~ msgstr "Preencha com a url para esta rede social. Com http://"
+
+#~ msgid "Footer"
+#~ msgstr "Rodapé"
+
+#~ msgid "Footer copyright text"
+#~ msgstr "Texto dos direitos autorais do rodapé"
+
+#~ msgid "Enter text used in the left side of the footer. It can be HTML"
+#~ msgstr "Digite o texto usado no lado esquerdo do rodapé. Pode ser HTML"
+
+#~ msgid "Google Analytics Code"
+#~ msgstr "Código do Google Analytics"
+
+#~ msgid ""
+#~ "You can paste your Google Analytics or other tracking code in this box. "
+#~ "This will be automatically added to the footer."
+#~ msgstr ""
+#~ "Você pode colar o seu Google Analytics ou outros códigos de rastreamento "
+#~ "neste campo. Ele será automaticamente adicionado ao rodapé."
+
+#~ msgid "Custom Favicon"
+#~ msgstr "Favicon personalizado"
+
+#~ msgid ""
+#~ "A favicon is a 16x16 pixel icon that represents your site; paste the URL "
+#~ "to a .ico image that you want to use as the image"
+#~ msgstr ""
+#~ "Um favicon é um ícone de 16x16 pixels que representa o seu site, cole a "
+#~ "URL de uma imagem .ico que você deseja usar como a imagem."
+
+#~ msgid "saved"
+#~ msgstr "salvas"
+
+#~ msgid "reset"
+#~ msgstr "recompostas"
+
+#~ msgid "To easily use the options theme, you can use the menu below."
+#~ msgstr ""
+#~ "Para usar facilmente as opções de tema, você pode usar o menu abaixo."
+
+#~ msgid "Save changes"
+#~ msgstr "Salvar"
+
+#~ msgid "Reset"
+#~ msgstr "Recompor"
+
+#~ msgid "Categories"
+#~ msgstr "Categorias"
+
+#~ msgid ""
+#~ "Configure your Widgets from Wordpress in the Appearance menu > Widgets > "
+#~ "Footer Area, from the dashboard"
+#~ msgstr ""
+#~ "Configure seus Widgets do Wordpress pelo painel administrativo em "
+#~ "Aparência > Widgets > Footer Area"
+
+#~ msgid ""
+#~ "Configure your Widgets from Wordpress in the Appearance menu > Widgets > "
+#~ "Sidebar Area, from the dashboard"
+#~ msgstr ""
+#~ "Configure seus Widgets do Wordpress pelo painel administrativo em "
+#~ "Aparência > Widgets > Sidebar Area"
