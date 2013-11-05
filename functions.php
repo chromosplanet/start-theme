@@ -63,6 +63,19 @@ if ( function_exists( 'add_theme_support' ) ) add_theme_support( 'post-thumbnail
 //add_image_size('thumb-custom-1', 640, 326, true);
 //add_image_size('thumb-custom-2', 66, 66, true);
 
+//Desativar cores Wordpress
+function admin_color_scheme() {
+   global $_wp_admin_css_colors;
+   $_wp_admin_css_colors = 0;
+}
+add_action('admin_head', 'admin_color_scheme');
+
+function disable_browser_upgrade_warning() {
+    remove_meta_box( 'dashboard_browser_nag', 'dashboard', 'normal' );
+}
+add_action( 'wp_dashboard_setup', 'disable_browser_upgrade_warning' );
+
+
 // Registro de Sidebars
 if ( function_exists('register_sidebar') )
 register_sidebar(array(
