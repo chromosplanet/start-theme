@@ -16,29 +16,6 @@ echo $options['cleanfeedurls'];
 $p2h_options = array (
 
 //Redes Sociais
-array("name" => "Informações",
-		"type" => "section"),
-
-array("name" => "Informações sobre",
-		"type" => "section-desc"),
-	
-array("type" => "open"),
-
-array("name" => "Endereço",
-		"desc" => "Endere&ccedil;o completo",
-		"id" => "endereco",
-		"type" => "text",
-		"std" => ""),
-		
-array("name" => "Telefone",
-		"desc" => "Ex.: (31) 3333-3333",
-		"id" => "telefone",
-		"type" => "text",
-		"std" => ""),				
-		
-array("type" => "close"),
-
-//Redes Sociais
 array("name" => "Redes Sociais",
 		"type" => "section"),
 
@@ -50,12 +27,6 @@ array("type" => "open"),
 array("name" => "Twitter",
 		"desc" => "Endere&ccedil;o completo do Twitter",
 		"id" => "twitter_url",
-		"type" => "text",
-		"std" => ""),
-
-array("name" => "YouTube",
-		"desc" => "Endere&ccedil;o completo do YouTube",
-		"id" => "youtube_url",
 		"type" => "text",
 		"std" => ""),
 		

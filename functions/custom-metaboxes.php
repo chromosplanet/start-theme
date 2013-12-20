@@ -59,8 +59,12 @@ function metaboxes_clientes( array $meta_boxes ) {
         ),
     );
 
-    $post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
-    $template_file = get_post_meta($post_id,'_wp_page_template',TRUE);
+    if(isset($_GET['post']) || isset($_POST['post_ID']) ){
+        $post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
+        $template_file = get_post_meta($post_id,'_wp_page_template',TRUE);
+    } else {
+        $template_file = '';
+    }
 
     if ($template_file == 'page-fotos.php') {
 
