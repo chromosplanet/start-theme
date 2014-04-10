@@ -2,7 +2,7 @@
 
 <!-- start -->
 
-  <?php //cp_slide(); ?>
+  <?php cp_slide(); ?>
 
 <!-- end -->
 

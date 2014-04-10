@@ -45,10 +45,14 @@ function cp_slide( $post_type = "post", $limite = 4, $caption = false, $indicato
 	  $i = 0;
 		foreach ( $slides as $slide ) :
 			$active = ( $i == 0 )?" active":"";
+			$meta = get_post_meta( $slide->ID );
+			if( isset($meta['cp_slide'][0]) ) $link = ( !empty($meta['cp_slide'][0] ) )?$meta['cp_slide'][0]:"#";
 			
 			$output .= "<div class='item".$active."'>";
-			$output .= get_the_post_thumbnail( $slide->ID, 'full', array( 'class' => $resposive, 'alt' => $slide->post_title ) );
-			
+			$output .= ( isset($link) )?"<a href='".esc_url( $link )."' target='_blank'>":"";
+				$output .= get_the_post_thumbnail( $slide->ID, 'full', array( 'class' => $resposive, 'alt' => $slide->post_title ) );
+			$output .= ( isset($link) )?"</a>":"";
+				
 			if( $caption == true ):
 				$output .= "<div class='carousel-caption'>";
 				$output .= esc_html( $slide->post_title );
@@ -56,6 +60,7 @@ function cp_slide( $post_type = "post", $limite = 4, $caption = false, $indicato
 			endif;
 			$output .= "</div>";
 
+			unset($link);
 			$i++;
 		endforeach;
 
