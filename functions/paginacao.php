@@ -1,39 +1,42 @@
 <?php 
-	// Função para gerar paginação númerica
-	function wp_pagination($pages = '', $range = 2)
-	{  
-	     $showitems = ($range * 2)+1;  
+	 /**
+	 * This function wraps the WordPress paginate_links function.   * 
+	 * @param array $args See http://codex.wordpress.org/Function_Reference/paginate_links for documentation
+	 * @uses paginate_links()
+	 */
+	function cp_paginate_links( $args = array() )
+	{
+	    global $wp_query;
 
-	     global $paged;
-	     if(empty($paged)) $paged = 1;
+	    $defaults = array(
+	        'big_number' => 999999999,
+	        'base'       => str_replace( 999999999, '%#%', get_pagenum_link( 999999999 ) ),
+	        'format'     => '?paged=%#%',
+	        'current'    => max( 1, get_query_var( 'paged' ) ),
+	        'total'      => $wp_query->max_num_pages,
+	        'prev_next'  => true,
+	        'end_size'   => 1,
+	        'mid_size'   => 2,
+	        'type'       => 'list'
+	    );
 
-	     if($pages == '')
-	     {
-	         global $wp_query;
-	         $pages = $wp_query->max_num_pages;
-	         if(!$pages)
-	         {
-	             $pages = 1;
-	         }
-	     }   
+	    $args = wp_parse_args( $args, $defaults );
 
-	     if(1 != $pages)
-	     {
-	         echo "<div class='posts_pagination'>";
-	         if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo;</a>";
-	         if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a>";
+	    extract( $args, EXTR_SKIP );
 
-	         for ($i=1; $i <= $pages; $i++)
-	         {
-	             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
-	             {
-	                 echo ($paged == $i)? "<span class='current'>".$i."</span>":"<a href='".get_pagenum_link($i)."' class='inactive' >".$i."</a>";
-	             }
-	         }
+	    if ( $total == 1 ) return;
 
-	         if ($paged < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($paged + 1)."'>&rsaquo;</a>";  
-	         if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>&raquo;</a>";
-	         echo "</div>\n";
-	     }
+	    $paginate_links = apply_filters( 'cp_paginate_links', paginate_links( array(
+	        'base'      => $base,
+	        'format'    => $format,
+	        'current'   => $current,
+	        'total'     => $total,
+	        'prev_next' => $prev_next,
+	        'end_size'  => $end_size,
+	        'mid_size'  => $mid_size,
+	        'type'      => $type
+	    ) ) );
+
+	    echo $paginate_links;
 	}
 ?>

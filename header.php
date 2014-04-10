@@ -6,11 +6,19 @@ $options = get_option('p2h_theme_options');
 $footer_text = $options['footer_text'];
 $twitter_url =  $options['twitter_url'];
 $facebook_url =  $options['facebook_url'];
+$youtube_url =  $options['youtube_url'];
 $google_code =  $options['google_code'];
+$telefone =  $options['telefone'];
+$email =  $options['email'];
 ?>
+
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <?php if (is_single() || is_page() ) : if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -37,11 +45,7 @@ $theme_path = get_template_directory_uri();
 
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 <link rel="stylesheet" type="text/css" href="<?php echo $theme_path; ?>/assets/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
-<link rel="shortcut icon" href="<?php echo $theme_path; ?>/favicon.ico" type="image/x-icon" />
-<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
-<link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
-<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="<?php bloginfo('atom_url'); ?>" />
-<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />    
+<link rel="shortcut icon" href="<?php echo $theme_path; ?>/dist/img/favicon.png" type="image/x-icon" />
 
 <?php wp_get_archives('type=monthly&format=link'); ?>
 

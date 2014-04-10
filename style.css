@@ -1,10 +1,11 @@
 /*  
-Theme Name: Start Theme
+Theme Name: Chromos Planet
 Theme URI: http://www.chromosplanet.com.br
-Description: Tema feito sob medida para .
+Description: Tema feito sob medida.
 Author: Chromos Planet
 Author URI: http://www.chromosplanet.com.br
-Version: 1.0
+Version: 2.0
 */
 
-@import url("css/style.css");
+@import url("dist/css/bootstrap.min.css");
+@import url("dist/css/estilo.css");
